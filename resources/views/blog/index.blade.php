@@ -1,0 +1,134 @@
+@extends('layouts.main')
+
+@section('content')
+    <main id="contents" class="site-contnts">
+
+        <!--Blogs-->
+        <section class="row blog-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <article class="row loop-post">
+                            <img src="assets/images/b1.jpg" alt="" class="img-responsive">
+                            <h2 class="ptitle">Lorem Ipsum dolor is going to be hear</h2>
+                            <ul class="post-meta list-unstyled nav-pills">
+                                <li><a href="#"><i class="fa fa-calendar"></i>july 25, 2008</a></li>
+                                <li><a href="#"><i class="fa fa-user"></i>by admin</a></li>
+                                <li><a href="#"><i class="fa fa-comment"></i>comment (5)</a></li>
+                            </ul>
+                            <div class="entry-content row">
+                                <p>Aliquam vitae sem id sem efficitur interdum phasellus ut nulla nisi sed varius lacus pharet quam rutrum enim quis rhoncu estibulum sed maximus elits quisque act semper sem tempus nisic laoreet donec ex pharetra aliquam vitae sem id sem efficitur pharetra lacus quis eleifend. <br><a href="blog-post.html" class="read-more btn btn-primary">read more</a></p>
+                            </div>
+                        </article>
+                        <article class="row loop-post">
+                            <img src="assets/images/b2.jpg" alt="" class="img-responsive">
+                            <h2 class="ptitle">Lorem Ipsum dolor is going to be hear</h2>
+                            <ul class="post-meta list-unstyled nav-pills">
+                                <li><a href="#"><i class="fa fa-calendar"></i>july 25, 2008</a></li>
+                                <li><a href="#"><i class="fa fa-user"></i>by admin</a></li>
+                                <li><a href="#"><i class="fa fa-comment"></i>comment (5)</a></li>
+                            </ul>
+                            <div class="entry-content row">
+                                <p>Aliquam vitae sem id sem efficitur interdum phasellus ut nulla nisi sed varius lacus pharet quam rutrum enim quis rhoncu estibulum sed maximus elits quisque act semper sem tempus nisic laoreet donec ex pharetra aliquam vitae sem id sem efficitur pharetra lacus quis eleifend. <br><a href="blog-post.html" class="read-more btn btn-primary">read more</a></p>
+                            </div>
+                        </article>
+                        <article class="row loop-post">
+                            <img src="assets/images/b3.jpg" alt="" class="img-responsive">
+                            <h2 class="ptitle">Lorem Ipsum dolor is going to be hear</h2>
+                            <ul class="post-meta list-unstyled nav-pills">
+                                <li><a href="#"><i class="fa fa-calendar"></i>july 25, 2008</a></li>
+                                <li><a href="#"><i class="fa fa-user"></i>by admin</a></li>
+                                <li><a href="#"><i class="fa fa-comment"></i>comment (5)</a></li>
+                            </ul>
+                            <div class="entry-content row">
+                                <p>Aliquam vitae sem id sem efficitur interdum phasellus ut nulla nisi sed varius lacus pharet quam rutrum enim quis rhoncu estibulum sed maximus elits quisque act semper sem tempus nisic laoreet donec ex pharetra aliquam vitae sem id sem efficitur pharetra lacus quis eleifend. <br><a href="blog-post.html" class="read-more btn btn-primary">read more</a></p>
+                            </div>
+                        </article>
+                        <article class="row loop-post">
+                            <img src="assets/images/b4.jpg" alt="" class="img-responsive">
+                            <h2 class="ptitle">Lorem Ipsum dolor is going to be hear</h2>
+                            <ul class="post-meta list-unstyled nav-pills">
+                                <li><a href="#"><i class="fa fa-calendar"></i>july 25, 2008</a></li>
+                                <li><a href="#"><i class="fa fa-user"></i>by admin</a></li>
+                                <li><a href="#"><i class="fa fa-comment"></i>comment (5)</a></li>
+                            </ul>
+                            <div class="entry-content row">
+                                <p>Aliquam vitae sem id sem efficitur interdum phasellus ut nulla nisi sed varius lacus pharet quam rutrum enim quis rhoncu estibulum sed maximus elits quisque act semper sem tempus nisic laoreet donec ex pharetra aliquam vitae sem id sem efficitur pharetra lacus quis eleifend. <br><a href="blog-post.html" class="read-more btn btn-primary">read more</a></p>
+                            </div>
+                        </article>
+
+                        <nav class="pagination blog-pagination">
+                            <a href="#" class="page-numbers prev">previous</a>
+                            <a href="#" class="page-numbers">1</a>
+                            <a href="#" class="page-numbers">2</a>
+                            <a href="#" class="page-numbers">3</a>
+                            <a href="#" class="page-numbers next">next</a>
+                        </nav>
+                    </div>
+                    <div class="col-md-4 sidebar">
+                        <aside class="row widget widet_search">
+                            <h4 class="widget-title">Search</h4>
+                            <form action="#" role="search" class="searchform input-group">
+                                <input type="search" name="s" class="form-control" placeholder="Search">
+                                <span class="input-group-addon"><button type="submit"><i class="fa fa-search"></i></button></span>
+                            </form>
+                        </aside>
+                        <aside class="row widget widget_categories">
+                            <h4 class="widget-title">Categories</h4>
+                            <ul>
+                                <li class="cat-item"><a href="#">VPS Hosting Services</a>(12)</li>
+                                <li class="cat-item"><a href="#">Shared Hosting News and Services</a>(16)</li>
+                                <li class="cat-item"><a href="#">Search Engine Optiomisation</a>(19)</li>
+                                <li class="cat-item"><a href="#">Wordpress Hosting Services</a>(22)</li>
+                                <li class="cat-item"><a href="#">Web Hosting</a>(25)</li>
+                            </ul>
+                        </aside>
+                        <aside class="row widget widget_archive">
+                            <h4 class="widget-title">Archives</h4>
+                            <select name="archive-dropdown" id="archive-dropdown-1" onchange="document.location.href=this.options[this.selectedIndex].value;">
+                                <option value="">Select Month</option>
+                                <option value="#"> January 2017 </option>
+                                <option value="#"> December 2016 </option>
+                                <option value="#"> January 2013 </option>
+                                <option value="#"> March 2012 </option>
+                                <option value="#"> January 2012 </option>
+                                <option value="#"> March 2011 </option>
+                                <option value="#"> October 2010 </option>
+                                <option value="#"> September 2010 </option>
+                                <option value="#"> August 2010 </option>
+                                <option value="#"> July 2010 </option>
+                                <option value="#"> June 2010 </option>
+                                <option value="#"> May 2010 </option>
+                                <option value="#"> April 2010 </option>
+                                <option value="#"> March 2010 </option>
+                                <option value="#"> February 2010 </option>
+                                <option value="#"> January 2010 </option>
+                                <option value="#"> October 2009 </option>
+                                <option value="#"> September 2009 </option>
+                                <option value="#"> August 2009 </option>
+                                <option value="#"> July 2009 </option>
+                                <option value="#"> June 2009 </option>
+                                <option value="#"> May 2009 </option>
+                            </select>
+                        </aside>
+                        <aside class="row widget widget_tag_cloud">
+                            <h4 class="widget-title">Tags</h4>
+                            <div class="tagcloud">
+                                <a href="#" class="tag-link-1" title="Hosting">Hosting</a>
+                                <a href="#" class="tag-link-1" title="Shared Hosting">Shared Hosting</a>
+                                <a href="#" class="tag-link-1" title="VPS">VPS</a>
+                                <a href="#" class="tag-link-1" title="Web">Web</a>
+                                <a href="#" class="tag-link-1" title="Domain Reg">Domain Reg</a>
+                                <a href="#" class="tag-link-1" title="Web Hosting">Web Hosting</a>
+                                <a href="#" class="tag-link-1" title="WordPress Hosting">WordPress Hosting</a>
+                                <a href="#" class="tag-link-1" title="Host">Host</a>
+                                <a href="#" class="tag-link-1" title="Website">Website</a>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+@endsection
