@@ -13,13 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['namespace' => 'App\Http\Controllers', 'prefix' => '/'], function ()
+Route::group(['namespace' => 'App\Http\Controllers'], function ()
 {
     Route::group(['namespace' => 'Main'], function () {
         Route::get('/', 'IndexController');
     });
     Route::group(['namespace' => 'Blog', 'prefix' => 'blog'], function () {
         Route::get('/', 'IndexController');
+    });
+
+
+
+
+    Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
+        Route::group(['namespace' => 'Main'], function () {
+            Route::get('/', 'IndexController');
+        });
     });
 });
 
