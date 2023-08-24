@@ -2,7 +2,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{ asset('assets/admin/admin/images/favicon-32x32.png') }}" type="image/png"/>
+    <link rel="icon" href="{{ asset('assets/admin/images/favicon-32x32.png') }}" type="image/png"/>
     <!--plugins-->
     <link href="{{ asset('assets/admin/plugins/vectormap/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet"/>
@@ -22,6 +22,7 @@
     <link href="{{ asset('assets/admin/css/light-theme.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/css/semi-dark.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/css/header-colors.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/admin/css/style_d.css') }}" rel="stylesheet"/>
     <title>Store App - @yield('title')</title>
 </head>
 

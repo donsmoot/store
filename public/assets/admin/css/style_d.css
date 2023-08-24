@@ -1,0 +1,34 @@
+.icn-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 170px;
+}
+.icn-btn .parent-icon {
+    font-size: 18px;
+    line-height: 1;
+}
+.icn-btn .menu-title {
+    margin-left: 7px;
+}
+.crud_button .btn i {
+    margin-top: -1em;
+    margin-bottom: -1em;
+    margin-left: 0;
+    font-size: 18px;
+}
+.crud_button .btn {
+    padding: 5px 10px;
+}
+.right{
+    text-align: right;
+}
+.btn i {
+    vertical-align: middle;
+    margin-top: -1em;
+    margin-bottom: -0.85em;
+    margin-left: 0px;
+}
