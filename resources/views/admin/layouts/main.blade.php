@@ -4,7 +4,7 @@
 <body>
 <div class="wrapper">
     @include('admin.layouts.header')
-    @include('admin.layouts.left_menu')
+    @include('admin.includes.left_menu')
     @yield('content')
 </div>
 @include('admin.layouts.footer_scripts')
