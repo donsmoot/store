@@ -39,8 +39,8 @@
                             </div>
                             <div class="col-4 right">
                                 <div class="btn-group crud_button">
-                                    <button type="button" class="btn btn-outline-warning"><i
-                                            class="fadeIn animated bx bx-edit"></i></button>
+                                    <a href="{{ route('admin.category.edit', $category->id )}}" type="button" class="btn btn-outline-warning"><i
+                                            class="fadeIn animated bx bx-edit"></i></a>
                                     <button type="button" class="btn btn-outline-danger"><i
                                             class="fadeIn animated bx bx-trash"></i></button>
                                 </div>

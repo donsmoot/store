@@ -35,8 +35,13 @@
                                 <td>
                                     <div class="table-actions d-flex align-items-center gap-3 fs-6">
                                         <a href="{{ route('admin.category.show', $category->id )}}" class="text-primary"><i class="bi bi-eye-fill"></i></a>
-                                        <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Edit" aria-label="Edit"><i class="bi bi-pencil-fill"></i></a>
-                                        <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
+                                        <a href="{{ route('admin.category.edit', $category->id )}}" class="text-warning"><i class="bi bi-pencil-fill"></i></a>
+                                        <form action="{{  route('admin.category.delete', $category->id) }}" method="POST">
+                                            @csrf
+                                            @method("DELETE")
+                                            <button type="submit"></button>
+                                        </form>
+                                        <a href="{{ route('admin.category.delete', $category->id )}}:;" class="text-danger"><i class="bi bi-trash-fill"></i></a>
                                     </div>
                                 </td>
                             </tr>
