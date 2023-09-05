@@ -21,7 +21,7 @@
             <ul class="mm-collapse" style="">
                 <li> <a href="{{ route('admin.category.index') }}"><i class="bi bi-circle"></i>Категории</a>
                 </li>
-                <li> <a href="table-advance-tables.html"><i class="bi bi-circle"></i>Теги</a>
+                <li> <a href="{{ route('admin.tag.index') }}"><i class="bi bi-circle"></i>Теги</a>
                 </li>
                 <li> <a href="table-datatable.html"><i class="bi bi-circle"></i>Посты</a>
                 </li>

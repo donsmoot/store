@@ -12,7 +12,6 @@ class DeleteController extends Controller
     public function __invoke(Category $category )
     {
         $category->delete();
-        return view('admin.categories.show', compact('category'));
         return redirect()->route('admin.category.index');
     }
 }

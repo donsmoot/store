@@ -1,5 +1,5 @@
 @extends('admin.layouts.main')
-@section('title', 'Категория "'.$category->title.'"')
+@section('title', 'Тег "'.$tag->title.'"')
 @section('content')
     <main class="page-content">
         @include('admin.includes.breadcrumb')
@@ -17,14 +17,14 @@
 
                                 <tr>
                                     <td>ID</td>
-                                    <td>{{ $category->id }}</td>
+                                    <td>{{ $tag->id }}</td>
                                 </tr>
                                 <tr>
                                     <td>Наименование</td>
                                     <td>
                                         <div class="d-flex align-items-center gap-3 cursor-pointer">
                                             <div class="">
-                                                <p class="mb-0">{{ $category->title }}</p>
+                                                <p class="mb-0">{{ $tag->title }}</p>
                                             </div>
                                         </div>
                                     </td>
@@ -35,13 +35,13 @@
                         </div>
                         <div class="row justify-content-between">
                             <div class="col-4">
-                                <a href="{{ route('admin.category.index')}}" class="btn btn-outline-info back_button"><i class="fadeIn animated bx bx-arrow-to-left"> </i> Назад</a>
+                                <a href="{{ route('admin.tag.index')}}" class="btn btn-outline-info back_button"><i class="fadeIn animated bx bx-arrow-to-left"> </i> Назад</a>
                             </div>
                             <div class="col-4 right">
                                 <div class="btn-group crud_button">
-                                    <a href="{{ route('admin.category.edit', $category->id )}}" type="button" class="btn btn-outline-warning"><i
+                                    <a href="{{ route('admin.tag.edit', $tag->id )}}" type="button" class="btn btn-outline-warning"><i
                                             class="fadeIn animated bx bx-edit"></i></a>
-                                    <a href="#" data-title="{{ $category->title }}" data-id="{{ route('admin.category.delete', $category->id) }}" class="delete_link btn btn-outline-danger"><i class="fadeIn animated bx bx-trash"></i></a>
+                                    <a href="#" data-title="{{ $tag->title }}" data-id="{{ route('admin.tag.delete', $tag->id) }}" class="delete_link btn btn-outline-danger"><i class="fadeIn animated bx bx-trash"></i></a>
                                 </div>
                             </div>
                         </div>
