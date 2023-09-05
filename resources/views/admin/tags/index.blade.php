@@ -1,10 +1,10 @@
 @extends('admin.layouts.main')
-@section('title', 'Категории')
+@section('title', 'Теги')
 @section('content')
     <main class="page-content">
         @include('admin.includes.breadcrumb')
         <div class="col-12 mb-3">
-            <a href="{{ route('admin.category.create') }}" class="btn btn-outline-primary px-5 radius-30 icn-btn"><div class="parent-icon"><i class="fadeIn animated bx bx-plus-circle"> </i></div><div class="menu-title"> Добавить</div></a>
+            <a href="{{ route('admin.tag.create') }}" class="btn btn-outline-primary px-5 radius-30 icn-btn"><div class="parent-icon"><i class="fadeIn animated bx bx-plus-circle"> </i></div><div class="menu-title"> Добавить</div></a>
         </div>
         <div class="card col-6">
             <div class="card-body">
@@ -22,21 +22,21 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach( $categories as $category)
+                        @foreach( $tags as $tag)
                             <tr>
-                                <td>{{ $category->id }}</td>
+                                <td>{{ $tag->id }}</td>
                                 <td>
                                     <div class="d-flex align-items-center gap-3 cursor-pointer">
                                         <div class="">
-                                            <p class="mb-0">{{ $category->title }}</p>
+                                            <p class="mb-0">{{ $tag->title }}</p>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                                        <a href="{{ route('admin.category.show', $category->id )}}" class="text-primary"><i class="bi bi-eye-fill"></i></a>
-                                        <a href="{{ route('admin.category.edit', $category->id )}}" class="text-warning"><i class="bi bi-pencil-fill"></i></a>
-                                        <a href="#" data-title="{{ $category->title }}" data-id="{{ route('admin.category.delete', $category->id) }}" class="text-danger delete_link" ><i class="bi bi-trash-fill"></i></a>
+                                        <a href="{{ route('admin.tag.show', $tag->id )}}" class="text-primary"><i class="bi bi-eye-fill"></i></a>
+                                        <a href="{{ route('admin.tag.edit', $tag->id )}}" class="text-warning"><i class="bi bi-pencil-fill"></i></a>
+                                        <a href="#" data-title="{{ $tag->title }}" data-id="{{ route('admin.tag.delete', $tag->id) }}" class="text-danger delete_link" ><i class="bi bi-trash-fill"></i></a>
                                     </div>
                                 </td>
                             </tr>

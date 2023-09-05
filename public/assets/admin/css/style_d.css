@@ -32,3 +32,25 @@
     margin-bottom: -0.85em;
     margin-left: 0px;
 }
+.deleteForm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#modaldelete .modal-header{
+    border-bottom: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+#modaldelete .modal-header button{
+    margin: 0px;
+
+}
+#modaldelete .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 1rem 1rem;
+}
+#modaldelete .modal-title {
+    text-align: center;
+}
