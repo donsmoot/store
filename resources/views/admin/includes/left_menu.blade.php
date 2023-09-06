@@ -23,7 +23,7 @@
                 </li>
                 <li> <a href="{{ route('admin.tag.index') }}"><i class="bi bi-circle"></i>Теги</a>
                 </li>
-                <li> <a href="table-datatable.html"><i class="bi bi-circle"></i>Посты</a>
+                <li> <a href="{{ route('admin.post.index') }}"><i class="bi bi-circle"></i>Посты</a>
                 </li>
             </ul>
         </li>

@@ -23,6 +23,8 @@
     <link href="{{ asset('assets/admin/css/semi-dark.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/css/header-colors.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/css/style_d.css') }}" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+
     <title>Store App - @yield('title')</title>
 </head>
 

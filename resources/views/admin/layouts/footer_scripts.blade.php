@@ -14,6 +14,7 @@
 <!--app-->
 <script src="{{ asset('assets/admin/js/app.js') }}"></script>
 {{--<script src="{{ asset('assets/admin/js/index.js') }}"></script>--}}
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 <script src="{{ asset('assets/admin/js/script_d.js') }}"></script>
 <script>
     // new PerfectScrollbar(".best-product")
