@@ -50,7 +50,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <div class="mb-3" data-select2-id="21">
-                                            <label class="form-label">Select2 Multiple Control</label>
+                                            <label class="form-label">Теги</label>
                                             <select class="multiple-select" data-placeholder="Choose anything" multiple="multiple">
                                                 <option value="United States" selected>United States</option>
                                                 <option value="Aland Islands">Aland Islands</option>
