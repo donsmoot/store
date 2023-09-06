@@ -8,12 +8,15 @@
 <script src="{{ asset('assets/admin/plugins/vectormap/jquery-jvectormap-2.0.2.min.js') }}"></script>
 <script src="{{ asset('assets/admin/plugins/vectormap/jquery-jvectormap-world-mill-en.js') }}"></script>
 <script src="{{ asset('assets/admin/js/pace.min.js') }}"></script>
+<script src="{{ asset('assets/admin/plugins/select2/js/select2.min.js') }}"></script>
+<script src="{{ asset('assets/admin/js/form-select2.js') }}"></script>
 {{--<script src="{{ asset('assets/admin/plugins/chartjs/js/Chart.min.js') }}"></script>--}}
 {{--<script src="{{ asset('assets/admin/plugins/chartjs/js/Chart.extension.js') }}"></script>--}}
 {{--<script src="{{ asset('assets/admin/plugins/apexcharts-bundle/js/apexcharts.min.js') }}"></script>--}}
 <!--app-->
 <script src="{{ asset('assets/admin/js/app.js') }}"></script>
 {{--<script src="{{ asset('assets/admin/js/index.js') }}"></script>--}}
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 <script src="{{ asset('assets/admin/js/script_d.js') }}"></script>
 <script>
     // new PerfectScrollbar(".best-product")

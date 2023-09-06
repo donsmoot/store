@@ -8,9 +8,11 @@
     <link href="{{ asset('assets/admin/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/plugins/metismenu/css/metisMenu.min.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/admin/plugins/select2/css/select2.min.css') }}" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link href="{{ asset('assets/admin/css/bootstrap.min.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/css/bootstrap-extended.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/admin/plugins/select2/css/select2-bootstrap4.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/admin/css/style.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/css/icons.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -23,6 +25,8 @@
     <link href="{{ asset('assets/admin/css/semi-dark.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/css/header-colors.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/admin/css/style_d.css') }}" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+
     <title>Store App - @yield('title')</title>
 </head>
 
