@@ -41,19 +41,23 @@
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Категории:</label>
-                                        <select class="form-select" aria-label="Default select example" name="category_id">
+                                        <select class="form-select" aria-label="Default select example"
+                                                name="category_id">
                                             <option selected>Выберите категорию</option>
                                             @foreach($categories as $category)
-                                                <option value="{{ $category->id }}" {{ $category->id == old('category_id') ? 'selected' : ''}}>{{ $category->title }}</option>
+                                                <option
+                                                    value="{{ $category->id }}" {{ $category->id == old('category_id') ? 'selected' : ''}}>{{ $category->title }}</option>
                                             @endforeach
                                         </select>
                                     </div>
                                     <div class="mb-3">
                                         <div class="mb-3" data-select2-id="21">
                                             <label class="form-label">Теги</label>
-                                            <select class="multiple-select" data-placeholder="Choose anything" multiple="multiple">
-                                                <option value="United States" selected>United States</option>
-                                                <option value="Aland Islands">Aland Islands</option>
+                                            <select class="multiple-select"  name="tag_ids[]" data-placeholder="Choose anything"
+                                                    multiple="multiple">
+                                                @foreach($tags as $tag)
+                                                    <option {{ is_array(old('tag_ids')) && in_array($tag->id, old('tag_ids')) ? 'selected' : '' }} value="{{ $tag->id }}">{{$tag->title}}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>

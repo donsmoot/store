@@ -27,6 +27,8 @@ class StoreRequest extends FormRequest
             'preview_image' => 'file',
             'main_image' => 'file',
             'category_id' => 'required|exists:categories,id',
+            'tag_ids' => 'nullable|array',
+            'tag_ids.*' => 'nullable|integer|exists:tags,id',
         ];
     }
     public function messages()
