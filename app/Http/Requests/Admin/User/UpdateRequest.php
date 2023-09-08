@@ -23,7 +23,7 @@ class UpdateRequest extends FormRequest
     {
         return [
             'name' => 'required|string',
-            'email' => 'required|string|email',
+            'email' => 'required|string|email|unique:users',
             'password' => 'nullable|string',
         ];
     }
@@ -33,7 +33,7 @@ class UpdateRequest extends FormRequest
             'name.required' => 'Пожалуйста укажите "Имя пользователя"',
             'email.required' => 'Пожалуйста укажите "E-mail"',
             'email.email' => 'Не верно указан E-mail"',
-
+            'email.unique' => 'Пользователь с таким E-mail адресом уже существует',
         ];
     }
 }
