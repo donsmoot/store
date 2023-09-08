@@ -14,14 +14,14 @@
                                   enctype="multipart/form-data">
                                 @csrf
                                 <div class="col-12">
-                                    @if ($errors->has('title'))
+                                    @foreach ($errors->all() as $error)
                                         <div
                                             class="alert border-0 border-danger border-start border-4 bg-light-danger alert-dismissible fade show">
-                                            <div class="text-danger">{{ $errors->first('title') }}</div>
+                                            <div class="text-danger">{{ $error }}</div>
                                             <button type="button" class="btn-close" data-bs-dismiss="alert"
                                                     aria-label="Close"></button>
                                         </div>
-                                    @endif
+                                    @endforeach
                                     <label class="form-label">Название</label>
                                     <div class="mb-3">
                                         <input type="text" class="form-control" name="title"

@@ -26,7 +26,7 @@ class StoreRequest extends FormRequest
             'content' => 'required|string',
             'preview_image' => 'nullable|file',
             'main_image' => 'nullable|file',
-            'category_id' => 'required|exists:categories,id',
+            'category_id' => 'required|integer|exists:categories,id',
             'tag_ids' => 'nullable|array',
             'tag_ids.*' => 'nullable|integer|exists:tags,id',
         ];
@@ -35,7 +35,10 @@ class StoreRequest extends FormRequest
     {
         return [
             'title.required' => 'Пожалуйста укажите "Название поста"',
-            'content.required' => 'Поле контент пустое',
+            'content.required' => 'Поле  "Контент" не должно быть пустым',
+            'category_id.required' => 'Выберите "Категорию"',
+            'category_id.integer' => 'Выберите "Категорию"',
+            'category_id.exists' => 'Выберите "Категорию"',
         ];
     }
 }

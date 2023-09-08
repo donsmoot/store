@@ -34,7 +34,11 @@ class UpdateRequest extends FormRequest
     public function messages()
     {
         return [
-            'title.required' => 'Пожалуйста укажите "Название категории"',
+            'title.required' => 'Пожалуйста укажите "Название поста"',
+            'content.required' => 'Поле  "Контент" не должно быть пустым',
+            'category_id.required' => 'Выберите "Категорию"',
+            'category_id.integer' => 'Выберите "Категорию"',
+            'category_id.exists' => 'Выберите "Категорию"',
 
         ];
     }
