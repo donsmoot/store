@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Admin\Category;
+namespace App\Http\Requests\Admin\User;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -22,13 +22,17 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|string'
+            'name' => 'required|string',
+            'email' => 'required|string|email',
+            'password' => 'nullable|string',
         ];
     }
     public function messages()
     {
         return [
-            'title.required' => 'Пожалуйста укажите "Название категории"',
+            'name.required' => 'Пожалуйста укажите "Имя пользователя"',
+            'email.required' => 'Пожалуйста укажите "E-mail"',
+            'email.email' => 'Не верно указан E-mail"',
 
         ];
     }

@@ -14,14 +14,26 @@
                                 @csrf
                                 @method('PATCH')
                                 <div class="col-12">
-                                    @if ($errors->has('name'))
-                                    <div class="alert border-0 border-danger border-start border-4 bg-light-danger alert-dismissible fade show">
-                                        <div class="text-danger">{{ $errors->first('name') }}</div>
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                    </div>
-                                    @endif
-                                    <label class="form-label">Название</label>
-                                    <input type="text" class="form-control" name="title" placeholder="Название категории" value="{{$user->name}}">
+                                    @foreach ($errors->all() as $error)
+                                        <div
+                                            class="alert border-0 border-danger border-start border-4 bg-light-danger alert-dismissible fade show">
+                                            <div class="text-danger">{{ $error }}</div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                    @endforeach
+                                        <div class="mb-3">
+                                            <label class="form-label">Имя пользователя</label>
+                                            <input type="text" class="form-control" name="name" placeholder="Имя пользователя" value="{{ $user->name }}">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">E-mail</label>
+                                            <input type="email" class="form-control" name="email" placeholder="E-mail адрес" value="{{ $user->email }}">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Пароль</label>
+                                            <input type="password" class="form-control" name="password" placeholder="Пароль" value="{{ old('password') }}">
+                                        </div>
 
                                 </div>
                                 <div class="col-12">
