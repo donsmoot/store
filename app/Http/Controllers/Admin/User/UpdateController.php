@@ -13,13 +13,11 @@ class UpdateController extends Controller
     public function __invoke(UpdateRequest $request, User $user )
     {
         $data = $request->validated();
-        //dd($data);
         if(isset($data['password'])):
             $data['password'] = Hash::make($data['password']);
             $user->update($data);
         else:
             unset($data['password']);
-            //$user->update(['email' => $data['email']], [$data['name'], $data['email']]);
             $user->update($data);
         endif;
         return view('admin.users.show', compact('user'));

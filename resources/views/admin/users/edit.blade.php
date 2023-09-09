@@ -34,7 +34,17 @@
                                             <label class="form-label">Пароль</label>
                                             <input type="password" class="form-control" name="password" placeholder="Пароль" value="{{ old('password') }}">
                                         </div>
-
+                                        <div class="mb-3">
+                                            <label class="form-label">Выберите группу пользователя:</label>
+                                            <select class="form-select" aria-label="Default select example"
+                                                    name="role">
+                                                <option selected>Группы пользователей</option>
+                                                @foreach($roles as $id => $role)
+                                                    <option
+                                                        value="{{ $id }}" {{ $id == $user->role ? 'selected' : ''}}>{{ $role }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="d-grid">
