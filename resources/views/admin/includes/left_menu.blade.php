@@ -28,7 +28,7 @@
             </ul>
         </li>
         <li>
-            <a href="pages-user-profile.html">
+            <a href="{{ route('admin.user.index') }}">
                 <div class="parent-icon"><i class="bi bi-person-lines-fill"></i>
                 </div>
                 <div class="menu-title">User Profile</div>
