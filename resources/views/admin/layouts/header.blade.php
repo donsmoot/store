@@ -87,12 +87,16 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li>
-                            <a class="dropdown-item" href="authentication-signup-with-header-footer.html">
-                                <div class="d-flex align-items-center">
-                                    <div class=""><i class="bi bi-lock-fill"></i></div>
-                                    <div class="ms-3"><span>Logout</span></div>
-                                </div>
-                            </a>
+                            <form action="{{ route('logout') }}" method="post">
+                                <a class="dropdown-item" href="">
+                                    @csrf
+                                    <input type="submit" value="Выход">
+                                    <div class="d-flex align-items-center">
+                                        <div class=""><i class="bi bi-lock-fill"></i></div>
+                                        <div class="ms-3"><span>Logout</span></div>
+                                    </div>
+                                </a>
+                            </form>
                         </li>
                     </ul>
                 </li>
