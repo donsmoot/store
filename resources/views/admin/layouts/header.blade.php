@@ -19,6 +19,9 @@
                         </div>
                     </a>
                 </li>
+                <li class="nav-item ">
+                    <a href="/clear">Очистить кэш</a>
+                </li>
                 <li class="nav-item dropdown dropdown-user-setting">
                     <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown">
                         <div class="user-setting d-flex align-items-center">

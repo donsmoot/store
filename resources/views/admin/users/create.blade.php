@@ -29,10 +29,10 @@
                                         <label class="form-label">E-mail</label>
                                         <input type="email" class="form-control" name="email" placeholder="E-mail адрес" value="{{ old('email') }}">
                                     </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Пароль</label>
-                                        <input type="password" class="form-control" name="password" placeholder="Пароль" value="{{ old('password') }}">
-                                    </div>
+{{--                                    <div class="mb-3">--}}
+{{--                                        <label class="form-label">Пароль</label>--}}
+{{--                                        <input type="password" class="form-control" name="password" placeholder="Пароль" value="{{ old('password') }}">--}}
+{{--                                    </div>--}}
                                         <div class="mb-3">
                                             <label class="form-label">Выберите группу пользователя:</label>
                                             <select class="form-select" aria-label="Default select example"

@@ -60,7 +60,7 @@
                     </ul>
                     <ul class="navbar-nav nav navbar-right">
                         <li class="active"><a href="/">Home</a></li>
-                        <li><a href="blog">Blog</a></li>
+                        <li><a href="/admin">ADMIN</a></li>
                         <li><a href="clear">Очистить КЭШ</a></li>
                         <li><a href="blog-post.html">Blog Post</a></li>
                         <li><a href="contact.html">Contact</a></li>
