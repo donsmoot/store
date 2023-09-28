@@ -25,7 +25,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function ()
 
 
 
-    Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
+    Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth', 'admin', 'verified']], function () {
         Route::group(['namespace' => 'Main'], function () {
             Route::get('/', 'IndexController');
         });
@@ -65,6 +65,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function ()
             Route::patch('/{user}', 'UpdateController')->name('admin.user.update');
             Route::delete('/{user}', 'DeleteController')->name('admin.user.delete');
         });
+        Route::group(['namespace' => 'Error', 'prefix' => 'error'], function () {
+            Route::get('/', 'IndexController')->name('admin.error.index');
+        });
     });
 });
 
@@ -78,6 +81,6 @@ Route::get('/clear', function () {
     return "Кэш очищен.";
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 

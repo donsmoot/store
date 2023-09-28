@@ -13,6 +13,9 @@
                             <form action="{{ route('admin.user.store') }}" method="POST" class="row g-3">
                                 @csrf
                                 <div class="col-12">
+                                    @if (session('error'))
+                                        <div class="alert alert-danger">{{ session('error') }}</div>
+                                    @endif
                                     @foreach ($errors->all() as $error)
                                         <div
                                             class="alert border-0 border-danger border-start border-4 bg-light-danger alert-dismissible fade show">
